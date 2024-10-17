@@ -20,6 +20,9 @@ class BlocsProviders extends StatelessWidget {
       BlocProvider(
         create: (context) => RouterSimpleCubit(),
       ),
+      BlocProvider(
+        create: (context) => CounterCubit(),
+      ),
     ], child: const MyApp());
   }
 }
