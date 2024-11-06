@@ -12,4 +12,7 @@ void serviceLocatorInit() {
 
 
   getIt.registerSingleton<GuestsBloc>(GuestsBloc());
+  getIt.registerSingleton<PokemonBloc>(PokemonBloc(
+    fetchPokemon: PokemonInformation.getPokemonName
+  ));
 }
